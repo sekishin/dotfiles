@@ -1,6 +1,6 @@
 " setting
 "文字コードをUFT-8に設定
-set encoding=utf-8
+set fenc=utf-8
 " バックアップファイルを作らない
 set nobackup
 " スワップファイルを作らない
@@ -15,7 +15,8 @@ set showcmd
 set backspace=2
 " クリップボード
 set clipboard=unnamedplus
-
+set clipboard+=unnamed
+set clipboard+=autoselect
 " 見た目系
 " 行番号を表示
 set number
