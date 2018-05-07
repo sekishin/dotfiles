@@ -62,7 +62,7 @@ alias c='cdr'
 # historyに日付を表示
 alias h='fc -lt '%F %T' 1'
 alias cp='cp -i'
-alias rm='rm -i'
+alias rm='trash-put'
 alias mkdir='mkdir -p'
 alias ..='c ../'
 alias back='pushd'
@@ -136,3 +136,9 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
+
+# rmをtrash-putに
+if typr trash-put &> /dev/null; then
+    alias rm='trash-put'
+fi
+
