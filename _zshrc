@@ -138,7 +138,7 @@ precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 # rmをtrash-putに
-if typr trash-put &> /dev/null; then
+if type trash-put &> /dev/null; then
     alias rm='trash-put'
 fi
 
