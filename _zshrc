@@ -62,7 +62,6 @@ alias c='cdr'
 # historyに日付を表示
 alias h='fc -lt '%F %T' 1'
 alias cp='cp -i'
-alias rm='trash-put'
 alias mkdir='mkdir -p'
 alias ..='c ../'
 alias back='pushd'
